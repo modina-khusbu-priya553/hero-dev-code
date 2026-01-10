@@ -34,6 +34,7 @@
 .section-heading{
     max-width: 827px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .section-heading h2{
@@ -43,7 +44,7 @@
 
 .section-heading p{
     font-size: 18px;
-    line-height: 30px;
+    line-height: 30px;  /*we make line height*/
     margin-bottom: 30px;
     color:#757575;
 
@@ -163,4 +164,46 @@ nav .menu a{
 .about-info .info-card h4 { 
      font-size: 20px ;
 
+}
+/* we create another section nd we make distance from 1 section 2 another by adding padding */
+#skill{
+    padding-top: 130px;
+}
+
+#skill .skill-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#skill .skill-container .skill-box{
+    display: flex;
+    gap: 24px;
+}
+.skill-box .skill-card{
+    max-width: 267px;
+    /* height: 377px; */
+    padding: 30px;
+    box-shadow: 0 6px 50px 0 #00000013;
+
+    /* the padding is from the whole card to the box */
+}
+
+.skill-card img{
+    max-width: 44px;
+    padding-bottom: 30px;
+    
+    
+}
+
+.skill-card h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skill-card p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+    margin-bottom: 30px;
 }
