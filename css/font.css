@@ -131,8 +131,9 @@ nav .menu a{
 }
 
 /* design about section */
-
-#about{
+/* we create another section nd we make distance from 1 section 2 another by adding padding */
+/* we add this 3 section id in one place because there padding top are same */
+#about, #skill, #resume{
     padding-top: 130px;
 }
 
@@ -165,10 +166,7 @@ nav .menu a{
      font-size: 20px ;
 
 }
-/* we create another section nd we make distance from 1 section 2 another by adding padding */
-#skill{
-    padding-top: 130px;
-}
+
 
 #skill .skill-container{
     max-width: 1140px;
@@ -206,4 +204,51 @@ nav .menu a{
     line-height: 28px;
     color: #757575;
     margin-bottom: 30px;
+}
+
+.resume-container hr{
+    margin: 30px 0;
+}
+
+#resume .resume-container{
+    max-width: 1140px;
+    margin: 113px auto 0;
+    display: flex;
+    gap: 24px;
+
+}
+
+.resume-container .section-title{
+    font-size: 30px;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.resume-card{
+    max-width: 511px;
+    margin-right: 47px;
+
+}
+.resume-card .card-title{
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.resume-card .card-info{
+    font-size: 20px;
+    color: #757575;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+.resume-card .card-text{
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+    margin-right: 47px;
+
 }
