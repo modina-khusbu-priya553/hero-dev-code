@@ -50,12 +50,16 @@
 
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* main style */
 header{
     background-color: #FFF8F3;
     padding-top: 50px; /* top padding for header for making gap from top, we will make it in the header el */
     background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
-    background-position: top left, bottom right;
+    background-position: 23px 38px, bottom right;
     background-repeat: no-repeat;
     background-size: contain, auto;
 
@@ -250,5 +254,51 @@ nav .menu a{
     line-height: 28px;
     color: #757575;
     margin-right: 47px;
+
+}
+
+footer {
+    margin-top: 130px;
+    background-color: #FFF8F3;
+    padding: 130px 0;
+}
+
+footer .footer-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 117px;
+}
+
+.footer-container .social{
+    max-width: 562px;
+}
+.footer-container h2{
+    font-size: 35px;
+    color: #181818;
+    margin-bottom: 20px;
+
+}
+
+.footer-container p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #474747;
+    margin-bottom: 30px;
+
+}
+
+.footer-container .icons a{
+    margin-right: 25px;
+}
+
+.footer-container form input[type="text"], .footer-container form textarea {
+    padding: 18px;
+    width: 461px;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 5px;
+    color: #757575;
+
 
 }
