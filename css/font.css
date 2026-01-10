@@ -17,20 +17,29 @@
 .color-orange{
     color: #FD6E0A;
 }
-
+/* we make a btn class in button so that we can use the same style in every button. */
 .btn{
     color:white;
     background-color: #FD6E0A;
     border: none;
     border-radius: 5px;
     padding: 18px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
 
 }
+
 
 /* main style */
 header{
     background-color: #FFF8F3;
     padding-top: 50px; /* top padding for header for making gap from top, we will make it in the header el */
+    background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: contain, auto;
+
     
 }
 
@@ -41,6 +50,7 @@ nav{
     display: flex; /* flexbox layout so that the bar can be stay inline*/
     justify-content: space-between; /* to make space between the items of navigation bar, ,ake huge distance*/
     align-items: center;
+
 
 
 }
@@ -58,4 +68,45 @@ nav .menu a{
     font-size: 20;
     color: #474747;
     text-decoration: none;
+}
+
+#banner{
+    margin:47px 38px 0 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* we make a max width to give width every block el ex h1, p in the .banner-content */
+#banner .banner-content{
+    max-width: 585px;
+}
+#banner .banner-content h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+
+}
+
+#banner .banner-content h1{
+    font-size: 85px;
+    font-weight: bold;
+    color:#181818;
+    margin-bottom: 20px;
+}
+
+#banner .banner-content p{
+    font-size: 18px;
+    color: #757575;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+#banner .banner-image img{
+    max-width: 585px;
+    /* there is a gap in img by default, if we want to remove it, we need to do vertical-align:middle */
+    vertical-align: middle;
+
+
 }
