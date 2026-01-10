@@ -11,7 +11,7 @@
 }
 
 .logo h2{
-    font-size: 45;
+    font-size: 45px;
     font-weight: 900; 
 }
 .color-orange{
@@ -30,6 +30,24 @@
 
 }
 
+/* we design the section-heading another div container which is into the div .about-container (the whole container for about section) */
+.section-heading{
+    max-width: 827px;
+    text-align: center;
+}
+
+.section-heading h2{
+    font-size: 35px;
+    margin-bottom: 30px; /* there is a margin in the bottom between h2 and p so we add it */
+}
+
+.section-heading p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color:#757575;
+
+}
 
 /* main style */
 header{
@@ -65,7 +83,7 @@ nav .menu{
 
  /* we select ancor tag from nav so that we can style the link, text-decoration: none; means we want to remove underline from link */
 nav .menu a{
-    font-size: 20;
+    font-size: 20px;
     color: #474747;
     text-decoration: none;
 }
@@ -99,7 +117,7 @@ nav .menu a{
 #banner .banner-content p{
     font-size: 18px;
     color: #757575;
-    line-height: 30px;
+    line-height: 30px; /* it will create line hight */
     margin-bottom: 30px;
 }
 
@@ -108,5 +126,41 @@ nav .menu a{
     /* there is a gap in img by default, if we want to remove it, we need to do vertical-align:middle */
     vertical-align: middle;
 
+
+}
+
+/* design about section */
+
+#about{
+    padding-top: 130px;
+}
+
+/* we edit the about cotainer when info we write, padding is the destance from section and the div container, we set max-width for the maximux width of the whole section not just div .about-container and same for height and we add margin so that the content of the div .about-container can  be in the middle including section  */
+#about .about-container{
+    padding: 131px 157px;
+    max-width: 1140px;
+    max-height: 550px;
+    margin: 0 auto;
+    background-color: #FFF8F3;
+}
+
+#about .about-container .about-info{
+    display:flex;
+    justify-content: space-around; /*it will create a gape from each other*/
+    text-align: center;
+    
+}
+
+/* now we are going to edit the font which is in the info card in about info */
+
+.about-info .info-card p {
+    font-size: 20px;
+    line-height: 30px;
+    color:#757575;
+
+}
+
+.about-info .info-card h4 { 
+     font-size: 20px ;
 
 }
