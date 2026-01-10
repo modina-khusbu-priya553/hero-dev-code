@@ -1,0 +1,61 @@
+*{  /* universal selector */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* it include padding and border in total width and height, in the box */ 
+}
+/* share style */
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
+.logo h2{
+    font-size: 45;
+    font-weight: 900; 
+}
+.color-orange{
+    color: #FD6E0A;
+}
+
+.btn{
+    color:white;
+    background-color: #FD6E0A;
+    border: none;
+    border-radius: 5px;
+    padding: 18px 35px;
+
+}
+
+/* main style */
+header{
+    background-color: #FFF8F3;
+    padding-top: 50px; /* top padding for header for making gap from top, we will make it in the header el */
+    
+}
+
+nav{
+    width: 60%; /* navigation bar width */
+    max-width: 1140px; /* maximum width of navigation bar */
+    margin: 0 auto; /* to center align the navigation bar  nd it will take auto margin from left and right*/
+    display: flex; /* flexbox layout so that the bar can be stay inline*/
+    justify-content: space-between; /* to make space between the items of navigation bar, ,ake huge distance*/
+    align-items: center;
+
+
+}
+/* menu is in different box so we put ul a class and select it and style, flex for make them inline, list-style-type: none for remove the dot */
+nav .menu{    
+    display: flex;
+    list-style-type: none;
+    gap: 51px;
+    align-items: center;
+
+}
+
+ /* we select ancor tag from nav so that we can style the link, text-decoration: none; means we want to remove underline from link */
+nav .menu a{
+    font-size: 20;
+    color: #474747;
+    text-decoration: none;
+}
