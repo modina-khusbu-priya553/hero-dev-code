@@ -65,11 +65,14 @@ header{
 
     
 }
+.container{
 
-nav{
-    width: 60%; /* navigation bar width */
+    width: 71%; /* navigation bar width */
     max-width: 1140px; /* maximum width of navigation bar */
     margin: 0 auto; /* to center align the navigation bar  nd it will take auto margin from left and right*/
+}
+nav{
+
     display: flex; /* flexbox layout so that the bar can be stay inline*/
     justify-content: space-between; /* to make space between the items of navigation bar, ,ake huge distance*/
     align-items: center;
@@ -144,9 +147,7 @@ nav .menu a{
 /* we edit the about cotainer when info we write, padding is the destance from section and the div container, we set max-width for the maximux width of the whole section not just div .about-container and same for height and we add margin so that the content of the div .about-container can  be in the middle including section  */
 #about .about-container{
     padding: 131px 157px;
-    max-width: 1140px;
     max-height: 550px;
-    margin: 0 auto;
     background-color: #FFF8F3;
 }
 
@@ -172,10 +173,6 @@ nav .menu a{
 }
 
 
-#skill .skill-container{
-    max-width: 1140px;
-    margin: 0 auto;
-}
 
 #skill .skill-container .skill-box{
     display: flex;
@@ -215,6 +212,7 @@ nav .menu a{
 }
 
 #resume .resume-container{
+    margin-top: 130px;
     max-width: 1140px;
     margin: 113px auto 0;
     display: flex;
@@ -264,8 +262,7 @@ footer {
 }
 
 footer .footer-container{
-    max-width: 1140px;
-    margin: 0 auto;
+
     display: flex;
     gap: 117px;
 }
